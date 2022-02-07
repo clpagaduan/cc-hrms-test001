@@ -17,3 +17,8 @@ Login To HRMS
 Verify If User Is Logged In
     [Arguments]                      ${verify_username}
     Wait Until Page Contains         ${verify_username}
+    
+Navigate To Menu
+    [Arguments]                      ${Menu}
+    Wait Until Element Is Visible    ${Menu}    5s
+    Click Link                       ${Menu}
