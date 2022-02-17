@@ -5,12 +5,16 @@ ${browser}                 Chrome
 # ${username}    test
 # ${password}    Abc1234
 
-${username_hr}    test
-${password_hr}    Abc1234
+# ${username_hr}    test
+# ${password_hr}    Abc1234
+
+${username_hr}    cl.sup001
+${password_hr}    CLSUP1
 
 ${username_emp}                cl.emp001
-${password_emp}                CLEMP1
+${password_emp}                CLEMP1f
 ${password_incorrect}      FakePassword
+${password_emp_new}            CLEMP1g
 # ${user_dept}    Burnaby
 ${emp_longusername}                CL EMP 1 BC
 ${emp_dept}               BC Canada Computers
@@ -42,5 +46,7 @@ ${Nav_PersonalCenter}      //a[@href="/PersonalCenter/PersonalCenter"]
 
 #Top Menu
 ${Top_Logout}              //a[@href="/Home/Logout"]
+${Top_ChangePassword}      //*[@id="header"]/div/a[4]
+${Top_Messages}            //*[@id="header"]/div/a[3]
 
 ${iframe_main}             //iframe[@name='frmMain']
