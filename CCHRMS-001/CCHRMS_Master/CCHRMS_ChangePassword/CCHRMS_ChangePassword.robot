@@ -10,11 +10,11 @@ Test Teardown     Close Browser
 *** Test Cases ***
 Verify If User Can Change Password
     # Login To HRMS                        ${username}    ${password}
-    Open And Login To HRMS    ${username_emp}    ${password_emp}
+    Open And Login To HRMS    ${username_emp}    ${password_old}
     Wait Until Page Contains Element    ${Top_ChangePassword}
     Click Element    ${Top_ChangePassword}
     Wait Until Page Contains Element    ${CCChangePassword_Old}
-    Input Password    ${CCChangePassword_Old}    ${password_emp}
+    Input Password    ${CCChangePassword_Old}    ${password_old}
     Input Password    ${CCChangePassword_New}    ${password_emp_new}
     Input Password    ${CCChangePassword_Confirm}    ${password_emp_new}
     Click Element    ${CCChangePassword_Save}

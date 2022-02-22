@@ -8,22 +8,23 @@ Resource      ApplicationForLeave_Variables.resource
 Resource      ApplicationForLeave_Keywords.resource
 
 Test Setup        Open And Login To HRMS    ${username_emp}    ${password_emp}
-# Test Teardown     Close Browser
+Test Teardown     Close Browser
 
 *** Test Cases ***
-Verify If User Can Access Personal Center
+#To do: edit and delete since this is not sorted by created descending
+Verify If User Can File And Submit Leave
     Open Personal Center
     #Go To Leave
-    Mouse Over    ${PersonalCenter_Application}
-    Click Element    ${PersonalCenter_Leave}
-    Reload Personal Center
+    Go To Submenu                             ${PersonalCenter_Application}    ${PersonalCenter_Leave}
     #Create Leave
-    Click Element    ${Leave_Create}
-    #Enter Details
-    Wait Until Element Is Visible    ${Leave_Emp_Replace}    5s
-    Input Text    ${Leave_Emp_Replace}    ${Emp_replace}
+    Click Element                             ${Leave_Create}
+    Enter Leave Details                       ${Emp_replace}
+    Add Leave Time                     
+    Select Start Time
+    ${value_date}    Get Element Attribute    ${Start_Date_Value}    value
+    Log                                       ${value_date}
+    Save Leave
+    Submit Leave
     Sleep    5s
-    Press Keys    ${Leave_Emp_Replace}    ENTER
-    #Add Leave Time
-    Click Element    ${Leave_AddLeaveTime}
-    
+    Page Should Contain                       ${value_date}        
+

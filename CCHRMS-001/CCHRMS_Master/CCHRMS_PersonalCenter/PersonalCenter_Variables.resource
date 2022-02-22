@@ -9,8 +9,21 @@ ${PersonalCenter_RecentApp}     //*[@class="PH_Info2"]
 
 ${PersonalCenter_Frame}         //*[@id="PCContent"]
 
-${PersonalCenter_Application}    //*[@id="List_PC"]/li[1]/a
-${PersonalCenter_Leave}         //*[@id="List_PC"]/li[1]/ul/li[1]/a
+#Top Menu
+
+${PersonalCenter_Application}       //*[@id="List_PC"]/li[1]/a
+${PersonalCenter_Communication}     //*[@id="List_PC"]/li[2]/a
+${PersonalCenter_More}              //*[@id="List_PC"]/li[3]/a
+
+${PersonalCenter_Leave}           //a[@href="/PersonalCenter/ApplicationforLeave"]
+${PersonalCenter_CCIntravoice}    //a[@href="/PersonalCenter/Communication"]
+${PersonalCenter_Policy}          //a[@href="/Acknowledgement/Acknowledge"]
+${PersonalCenter_Expenses}        //a[@href="/PersonalCenter/Expense"]
+
+
+${PersonalCenter_AttendanceList}    //*[@id="List_PC"]/li[3]/ul/li[1]/a
+
+
 
 # ${CCSignIn_Dropdown}    //*[@id="TB_EmpDepartment"]
 

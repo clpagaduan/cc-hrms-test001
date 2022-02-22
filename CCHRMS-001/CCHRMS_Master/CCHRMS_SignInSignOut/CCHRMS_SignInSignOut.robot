@@ -27,7 +27,7 @@ Verify If User Can Sign In
     Select Department From Dropdown
     Click Sign In Box
     Wait Until Element Is visible        ${CCSignIn_Password} 
-    Input Password                       ${CCSignIn_Password}    ${password_emp}
+    Input Password                       ${CCSignIn_Password}    ${password_sso}
     Click Button                         ${CCSignIn_btn_ok}
     Wait Until Page Contains             ${CCSignIn_LoginSuccess}
     Sleep    10s
@@ -39,7 +39,7 @@ Verify If User Can Logout
     Select Department From Dropdown
     Click Sign In Box
     Wait Until Element Is visible        ${CCSignIn_Password} 
-    Input Password                       ${CCSignIn_Password}    ${password_emp}
+    Input Password                       ${CCSignIn_Password}    ${password_sso}
     Click Button                         ${CCSignIn_btn_ok}
     Wait Until Page Contains             ${CCSignIn_LogoutSuccess}
     Sleep    10s

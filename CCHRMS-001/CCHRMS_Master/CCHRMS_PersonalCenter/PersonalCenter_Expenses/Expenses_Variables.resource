@@ -1,5 +1,25 @@
 *** Variables ***
 
+${Expense_Create}            //*[@id="btnNewExpense"]
+${Expense_Search}            //*[@id="btn_search"]
+${Expense_Desc}              //*[@id="editExpenseName"]
+${Expense_check_mileage}     //*[@id="ckExpenseType_1"]
+
+${Expense_Start_Date}        //*[@id="editStartDate"]
+${Expense_Start_Today}       //*[@id="ui-datepicker-div"]/div[2]/button[1]
+
+${Expense_End_Date}          //*[@id="editEndDate"]
+${Expense_End_Today}         //*[@id="ui-datepicker-div"]/div[2]/button[1]
+
+${Expense_Save}              //*[@id="btnSaveExpense"]
+${Expense_Confirm}           //*[@id="BT_Confirm_Yes_Notes"]
+
+${Expense_edit_0}            //*[@onclick="editExpense(0)"]
+
+
+${desc}                      test expense
+${desc1}                     test expense 3
+
 ${Leave_Create}           //*[@id="btn_add"]
 ${Leave_Emp_Replace}      //*[@id="EmployeeSearch"]
 ${Leave_AddLeaveTime}     //*[@value="Add Leave Time"]

@@ -15,3 +15,9 @@ Open Personal Center
 Reload Personal Center
     Sleep    5s
     Select Frame    ${PersonalCenter_Frame}
+    
+Go To Submenu
+    [Arguments]    ${topmenu}    ${submenu}
+    Mouse Over                                ${topmenu}
+    Click Element                             ${submenu}
+    Reload Personal Center
