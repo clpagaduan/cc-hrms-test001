@@ -12,3 +12,6 @@ Resource      TimecardEditor_Variables.Resource
     # Click Element                      //*[contains(text(), '${user_dept}')]
     # Sleep    5s
     # Click Element                      //span[contains(text(), '${user_emp}')]
+    
+Reload Timecard
+    Select Frame                         ${Timecard_frame}

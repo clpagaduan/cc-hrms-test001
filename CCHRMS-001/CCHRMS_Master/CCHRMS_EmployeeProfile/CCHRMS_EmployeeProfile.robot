@@ -49,6 +49,7 @@ Verify If User Can Add New Employee
     Input Text                                ${Field_email_hrms}    ${New_email_hrms}
     Input Text                                ${Field_wage}    ${New_wage}
     Input Text                                ${Field_allowance}    ${New_allowance}
+    Sleep    5s
     Click Element                             ${Field_wage_monthly}
     Input Text                                ${Field_wage_confirm}    ${New_wage_total}
     Click Element                             ${Field_vacation_dropdown}
