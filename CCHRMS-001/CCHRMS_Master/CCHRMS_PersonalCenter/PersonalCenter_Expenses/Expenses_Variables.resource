@@ -2,6 +2,7 @@
 
 ${Expense_Create}            //*[@id="btnNewExpense"]
 ${Expense_Search}            //*[@id="btn_search"]
+${Expense_Reload}            //*[@class="l-bar-button l-bar-btnload"]
 ${Expense_Desc}              //*[@id="editExpenseName"]
 ${Expense_check_mileage}     //*[@id="ckExpenseType_1"]
 

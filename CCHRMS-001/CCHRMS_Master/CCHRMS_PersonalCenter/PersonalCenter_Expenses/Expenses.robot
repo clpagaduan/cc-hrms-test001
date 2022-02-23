@@ -22,7 +22,7 @@ Verify If User Can Create An Expense
     #Go To Leave
     Go To Submenu                             ${PersonalCenter_Application}    ${PersonalCenter_Expenses}
     Wait Until Element Is Visible    ${Expense_Create}
-    Click Element    ${Expense_Search}
+    Click Element    ${Expense_Reload}
     Create Expense
     Select Start Date
     Select End Date
@@ -33,7 +33,7 @@ Verify If User Can Edit An Expense
     #Go To Leave
     Go To Submenu                             ${PersonalCenter_Application}    ${PersonalCenter_Expenses}
     Wait Until Element Is Visible    ${Expense_Create}
-    Click Element    ${Expense_Search}
+    Click Element    ${Expense_Reload}
     Sleep    5s
     Click Edit of First Record
     #Change text
