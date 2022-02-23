@@ -9,6 +9,8 @@ Open Personal Center
     Navigate To Menu                     ${Nav_PersonalCenter}
     Sleep    10s
     Switch Window                        ${CCHRMS_Tab_PC}
+    Set Window Size                  1920    1080
+    Maximize Browser Window
     Sleep    5s
     Page Should Contain         ${emp_longusername}
     
