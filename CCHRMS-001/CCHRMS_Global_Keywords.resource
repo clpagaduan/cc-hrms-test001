@@ -6,6 +6,8 @@ Resource      CCHRMS_Global_Variables.resource
 
 Open HRMS
     Open Browser    ${url}    ${browser}
+    Set Window Size    1400    600
+    Maximize Browser Window
     
 Login As Regular Employee
     Open And Login To HRMS    ${username_emp}    ${password_emp}

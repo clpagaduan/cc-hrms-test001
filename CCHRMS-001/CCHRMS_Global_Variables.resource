@@ -1,6 +1,6 @@
 *** Variables ***
 ${url}                     http://cchrmsapp.azurewebsites.net/Home/Login
-${browser}                 headlesschrome
+${browser}                 chrome
 
 # ${username}    test
 # ${password}    Abc1234

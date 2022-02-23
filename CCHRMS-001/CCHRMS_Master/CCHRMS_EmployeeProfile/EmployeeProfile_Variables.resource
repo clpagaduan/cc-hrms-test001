@@ -50,5 +50,5 @@ ${New_vacation}         Regular full-time salaried
 ${New_name}    ${New_fname} ${New_lname}
 
 ${Search_emp}    CL SUP 1
-${Search_results}    //a[contains(text(),'${New_name}')]
+# ${Search_results}    //a[contains(text(),'${New_name}')]
 #changed from ${Search_emp}

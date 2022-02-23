@@ -27,8 +27,9 @@ Click Sign In Box
 Search For Employee
     [Arguments]    ${employee}
     Input Text    ${CCEmployeeProfile_QuickSearch}    ${employee}
-    Wait Until Element Is Visible    ${Search_results}    5s
-    Click Element    ${Search_results}
+    Wait Until Element Is Visible    //a[contains(text(),'${employee}')]    5s
+    Click Element    //a[contains(text(),'${employee}')]
+    #USED TO BE ${SEARCH_RESULTS}
     Sleep    5s
     Element Should Contain   ${CCEmployeeProfile_Header_Name}    ${employee} 
     
