@@ -34,7 +34,7 @@ Verify If Calendar Is Visible
 Verify If Notice Board Is Visible
     Open Personal Center
     Reload Personal Center
-    Page Should Contain Element   ${PersonalCenter_NoticeBoard}
+    Page Should Contain Element    ${PersonalCenter_NoticeBoard}
     
 Verify If Spiff and Comission Is Visible
     Open Personal Center
@@ -44,7 +44,7 @@ Verify If Spiff and Comission Is Visible
 Verify If Recent Applications Is Visible
     Open Personal Center
     Reload Personal Center
-    Page Should Contain Element   ${PersonalCenter_RecentApp}
+    Page Should Contain Element    ${PersonalCenter_RecentApp}
     # Sleep    15s
     # Close Browser
     

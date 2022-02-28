@@ -12,15 +12,15 @@ Test Teardown     Close Browser
 #TO DO - Active/Inactive Only
 
 Verify If User Can Access Employee Profile
-    Navigate To Menu                     ${Nav_EmployeeProfile}
+    Navigate To Menu                          ${Nav_EmployeeProfile}
     Reload HRMS
-    Wait Until Page Contains Element         ${CCEmployeeProfile_save}
+    Wait Until Page Contains Element          ${CCEmployeeProfile_save}
     
 Verify If User Can Select Department
-    Navigate To Menu                     ${Nav_EmployeeProfile}
+    Navigate To Menu                          ${Nav_EmployeeProfile}
     Reload HRMS
     Sleep    10s
-    Wait Until Page Contains Element         ${CCEmployeeProfile_Dropdown}    10s
+    Wait Until Page Contains Element          ${CCEmployeeProfile_Dropdown}    10s
     Select Department From Dropdown
    
     
@@ -30,13 +30,7 @@ Verify If User Can Search For Employee
     Sleep    10s
     Wait Until Page Contains Element          ${CCEmployeeProfile_Dropdown}    10s
     Search For Employee                       ${Search_Emp}
-    # Input Text    ${CCEmployeeProfile_QuickSearch}    ${Search_Emp}
-    # Wait Until Element Is Visible    ${Search_results}    5s
-    # Click Element    ${Search_results}
-    # Sleep    5s
-    # Element Should Contain   ${CCEmployeeProfile_Header_Name}    ${Search_Emp} 
     
- 
 Verify If User Can Add New Employee
     Navigate To Menu                          ${Nav_EmployeeProfile}
     Reload HRMS
@@ -62,9 +56,9 @@ Verify If User Can Add New Employee
     Element Should Contain                    ${CCEmployeeProfile_Header_Name}    ${New_name} 
     
 Verify If Newly Added Employee Was Saved
-    Navigate To Menu                     ${Nav_EmployeeProfile}
+    Navigate To Menu                          ${Nav_EmployeeProfile}
     Reload HRMS
     Sleep    10s
-    Wait Until Page Contains Element         ${CCEmployeeProfile_Dropdown}    10s
-    Search For Employee    ${New_name}
+    Wait Until Page Contains Element          ${CCEmployeeProfile_Dropdown}    10s
+    Search For Employee                       ${New_name}
 

@@ -8,19 +8,19 @@ ${browser}                 chrome
 # ${username_hr}    test
 # ${password_hr}    Abc1234
 
-${username_hr}    cl.sup001
-${password_hr}    CLSUP1
+${username_hr}                 cl.sup001
+${password_hr}                 CLSUP1
 
 ${username_emp}                cl.emp001
 ${password_emp}                CLEMP1l
 ${password_sso}                CLEMP1
 ${password_old}                CLEMP1k
-${password_incorrect}      FakePassword
+${password_incorrect}          FakePassword
 ${password_emp_new}            CLEMP1l
 # ${user_dept}    Burnaby
-${emp_longusername}                CL EMP 1 BC
-${emp_dept}               BC Canada Computers
-${emp_deptid}             128
+${emp_longusername}            CL EMP 1 BC
+${emp_dept}                    BC Canada Computers
+${emp_deptid}                  128
 
 
 #Login Screen

@@ -9,7 +9,6 @@ Test Teardown     Close Browser
 
 *** Test Cases ***
 Verify If User Can Access Schedule
-    # Login To HRMS                        ${username}    ${password}
     Navigate To Menu                     ${Nav_Schedule}
     Reload HRMS
     Wait Until Page Contains Element       ${CCSchedule_Search}

@@ -11,6 +11,6 @@ Test Teardown     Close Browser
 *** Test Cases ***
 Verify If User Can Open Messages
     Wait Until Element Is Visible    ${Top_Messages}
-    Click Element    ${Top_Messages}
+    Click Element                    ${Top_Messages}
     Wait Until Element Is Visible    ${Messages_content}
 

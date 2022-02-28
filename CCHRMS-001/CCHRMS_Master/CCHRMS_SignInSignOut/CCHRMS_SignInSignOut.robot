@@ -24,7 +24,7 @@ Verify If User Can Sign In
     Navigate To Menu                     ${Nav_SignInSignOut}
     Switch Window                        ${CCHRMS_Tab_SignIn}
     Sleep    5s
-    Select Department From Dropdown
+    Select Department From Dropdown      ${emp_dept}
     Click Sign In Box
     Wait Until Element Is visible        ${CCSignIn_Password} 
     Input Password                       ${CCSignIn_Password}    ${password_sso}
@@ -36,7 +36,7 @@ Verify If User Can Logout
     Navigate To Menu                     ${Nav_SignInSignOut}
     Switch Window                        ${CCHRMS_Tab_SignIn}
     Sleep    5s
-    Select Department From Dropdown
+    Select Department From Dropdown      ${emp_dept}
     Click Sign In Box
     Wait Until Element Is visible        ${CCSignIn_Password} 
     Input Password                       ${CCSignIn_Password}    ${password_sso}

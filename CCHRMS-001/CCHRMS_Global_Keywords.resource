@@ -5,27 +5,26 @@ Resource      CCHRMS_Global_Variables.resource
 *** Keywords ***
 
 Open HRMS
-    Open Browser    ${url}    ${browser}
+    Open Browser                     ${url}    ${browser}
     Set Window Size                  1920    1080
     Maximize Browser Window
     
 Login As Regular Employee
-    Open And Login To HRMS    ${username_emp}    ${password_emp}
+    Open And Login To HRMS           ${username_emp}    ${password_emp}
     
 Login as HR
-    Open And Login To HRMS    ${username_hr}    ${password_hr}
+    Open And Login To HRMS           ${username_hr}    ${password_hr}
     
 Open And Login To HRMS
-    [Arguments]    ${login_username}    ${login_password}
+    [Arguments]                      ${login_username}    ${login_password}
     Open HRMS
-    Login To HRMS    ${login_username}    ${login_password}
+    Login To HRMS                    ${login_username}    ${login_password}
     
 Login To HRMS
     [Arguments]                      ${username}    ${password}
     Input Text                       ${CCHRMS_LoginUsername}    ${username}
     Input Password                   ${CCHRMS_LoginPassword}    ${password}
     Click Element                    ${CCHRMS_LoginBtn}
-    
     
 Verify If User Is Logged In
     [Arguments]                      ${verify_username}
@@ -35,7 +34,7 @@ Verify If User Is Not Logged In
     Wait Until Page Contains         ${CCHRMS_LoginError}
     
 Verify If User Is Logged Out
-    Page Should Contain Element       ${CCHRMS_LoginBtn} 
+    Page Should Contain Element      ${CCHRMS_LoginBtn} 
     
 Navigate To Menu
     [Arguments]                      ${Menu}
@@ -48,5 +47,5 @@ Logout HRMS
     Click Link                       ${Top_Logout}
     
 Reload HRMS
-    Select Frame                         ${iframe_main}
+    Select Frame                     ${iframe_main}
     

@@ -15,14 +15,14 @@ Verify If User Can Access Expenses
     Open Personal Center
     #Go To Leave
     Go To Submenu                             ${PersonalCenter_Application}    ${PersonalCenter_Expenses}
-    Wait Until Element Is Visible    ${Expense_Create}
+    Wait Until Element Is Visible             ${Expense_Create}
 
 Verify If User Can Create An Expense
     Open Personal Center
     #Go To Leave
     Go To Submenu                             ${PersonalCenter_Application}    ${PersonalCenter_Expenses}
-    Wait Until Element Is Visible    ${Expense_Create}
-    Click Element    ${Expense_Reload}
+    Wait Until Element Is Visible             ${Expense_Create}
+    Click Element                             ${Expense_Reload}
     Create Expense
     Select Start Date
     Select End Date
@@ -32,18 +32,18 @@ Verify If User Can Edit An Expense
     Open Personal Center
     #Go To Leave
     Go To Submenu                             ${PersonalCenter_Application}    ${PersonalCenter_Expenses}
-    Wait Until Element Is Visible    ${Expense_Create}
-    Click Element    ${Expense_Reload}
+    Wait Until Element Is Visible             ${Expense_Create}
+    Click Element                             ${Expense_Reload}
     Sleep    5s
     Click Edit of First Record
     #Change text
-    ${old_desc}    Get Element Attribute    ${Expense_Desc}    value
+    ${old_desc}    Get Element Attribute      ${Expense_Desc}    value
     Log    ${old_desc}
-    Input Text    ${Expense_Desc}    ${desc1}
+    Input Text                                ${Expense_Desc}    ${desc1}
     Save Expense
     Click Edit of First Record
-    ${new_desc}    Get Element Attribute    ${Expense_Desc}    value
+    ${new_desc}    Get Element Attribute      ${Expense_Desc}    value
     Log    ${new_desc}
-    Should Not Be Equal    ${old_desc}    ${new_desc}
+    Should Not Be Equal                       ${old_desc}    ${new_desc}
     
     

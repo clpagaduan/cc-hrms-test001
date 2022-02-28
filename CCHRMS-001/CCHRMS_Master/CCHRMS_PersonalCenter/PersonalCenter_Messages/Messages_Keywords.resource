@@ -9,27 +9,27 @@ Resource      Messages_Variables.resource
 
 *** Keywords ***
 Click Recipient
-    [Arguments]    ${recipient}
-    Click Element            ${recipient}
+    [Arguments]                        ${recipient}
+    Click Element                      ${recipient}
     Reload Personal Center
     
 Enter Message Subject
-    [Arguments]    ${subject}
-    Wait Until Element Is Visible    ${Message_Subject}
-    Input Text    ${Message_Subject}    ${subject}
+    [Arguments]                        ${subject}
+    Wait Until Element Is Visible      ${Message_Subject}
+    Input Text                         ${Message_Subject}    ${subject}
     
 Enter Message Body
-    [Arguments]    ${message}
-    Select Frame    ${Message_Textbox_frame} 
-    Input Text    ${Message_Textbox}    ${message}
+    [Arguments]                        ${message}
+    Select Frame                       ${Message_Textbox_frame} 
+    Input Text                         ${Message_Textbox}    ${message}
     
 Send Message
-    Switch Window                        ${CCHRMS_Tab_PC}
+    Switch Window                      ${CCHRMS_Tab_PC}
     Reload Personal Center
-    Click Element    ${Message_Btn_Save}
+    Click Element                      ${Message_Btn_Save}
     
 Verify If Message Has Been Sent
-    Wait Until Element Is Visible    ${Message_Outbox}
-    Click Element    ${Message_Outbox}
+    Wait Until Element Is Visible      ${Message_Outbox}
+    Click Element                      ${Message_Outbox}
     Sleep    5s
-    Page Should Contain    ${text_subject}
+    Page Should Contain                ${text_subject}
